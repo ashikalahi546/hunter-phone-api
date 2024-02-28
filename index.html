@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Api</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+<main class="container mx-auto my-10">
+   
+    <section>
+<div class="flex  gap-2 justify-center">
+    <input id="input-field" type="text" placeholder="searching-1" class="input input-bordered w-full max-w-xs" />
+    <button onclick="buttonHandler()" class="btn btn-outline btn-accent">search</button>
+  
+
+</div>
+
+
+
+
+<div id="loading-spinner" class="text-center my-20 hidden">
+    <span class="loading loading-spinner text-error"></span>
+</div>
+     <div id="phone-container" class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1    gap-10 mt-5">
+ 
+     </div>
+
+    
+<dialog id="show_details_modal" class="modal">
+  <div class="modal-box">
+    <h3  id="show-detail-phone-name" class="font-bold text-lg">Hello!</h3>
+<div id="show-detail-container">
+
+</div>
+    <div  class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<div id="show-all-btn" class="text-center hidden">
+    <button onclick="handleShowAll()" class="btn btn-outline btn-info my-5">Show-All</button>
+</div>
+<img src="" alt="">
+    </section>
+</main>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
